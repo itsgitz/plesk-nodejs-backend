@@ -1,0 +1,12 @@
+{
+  "name": "plesk-nodejs-backend",
+  "version": "1.0.0",
+  "description": "Deploy nodejs backend service on Plesk (built-in http)",
+  "main": "index.js",
+  "scripts": {
+	  "test": "echo \"Error: no test specified\" && exit 1",
+	  "serve": "node index.js"
+  },
+  "author": "Anggit M Ginanjar",
+  "license": "MIT"
+}
