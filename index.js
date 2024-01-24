@@ -5,6 +5,11 @@ console.log('Run web server on port :', port);
 
 //create a server object:
 http.createServer(function (req, res) {
-  res.write(`Actually I'am running on port ${port}`); //write a response to the client
-  res.end(); //end the response
+  res.writeHead(200, {
+    'Content-Type': 'application/json',
+  });
+  res.end(JSON.stringify({
+    statusCode: 200,
+    message: `Hello, I was deployed from Git automatically!`
+  })); //end the response
 }).listen(port); //the server object listens on port 8080 
