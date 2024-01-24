@@ -10,6 +10,6 @@ http.createServer(function (req, res) {
   });
   res.end(JSON.stringify({
     statusCode: 200,
-    message: `Hello, I was deployed from Git automatically!`
+    message: `Hello, I was deployed from Git and restart automatically!`
   })); //end the response
 }).listen(port); //the server object listens on port 8080 
